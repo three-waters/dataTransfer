@@ -1,4 +1,4 @@
-package cn.threewaters.service;
+package cn.threewaters.service.impl;
 
 import java.util.List;
 import java.util.Map;
@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.google.common.collect.Maps;
 
+import cn.threewaters.service.StoreHouseService;
 import cn.threewaters.util.FormatterUtil;
 import cn.threewaters.util.SQLUtil;
 
