@@ -23,7 +23,7 @@ public class TestController {
 	public Object begin2() {
 		return testService.test2();
 	}
-	
+
 	@RequestMapping(value = "/3", method = RequestMethod.GET)
 	public Object begin3() {
 		return testService.test3();
