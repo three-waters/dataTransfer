@@ -8,4 +8,6 @@ public interface TestService extends BaseService {
 	public List<Map<String, Object>> test1();
 
 	public List<Map<String, Object>> test2();
+
+	public List<Map<String, Object>> test3();
 }

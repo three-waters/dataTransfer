@@ -16,7 +16,12 @@ public class TestServiceImpl extends BaseServiceImpl implements TestService {
 	}
 
 	public List<Map<String, Object>> test2() {
-		List<Map<String, Object>> queryForList = toJdbcTemplate.queryForList("select * from cwlw_storehouse");
+		List<Map<String, Object>> queryForList = toCwlwJdbcTemplate.queryForList("select * from cwlw_storehouse");
+		return queryForList;
+	}
+
+	public List<Map<String, Object>> test3() {
+		List<Map<String, Object>> queryForList = toGtJdbcTemplate.queryForList("select * from dm_crk_lspz");
 		return queryForList;
 	}
 

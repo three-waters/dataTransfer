@@ -14,34 +14,35 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 @Configuration
-public class ToDataSourceConfig {
+public class ToGtDataSourceConfig {
 
-	@Bean(name = "toDataSource")
-	@ConfigurationProperties(prefix = "spring.datasource.to")
+	@Bean(name = "toGtDataSource")
+	@ConfigurationProperties(prefix = "spring.datasource.to_gt")
 	public DataSource getDataSource() throws Exception {
 		return DataSourceBuilder.create().build();
 	}
 
-	@Bean(name = "toSqlSessionFactory")
-	public SqlSessionFactory toSqlSessionFactory(@Qualifier("toDataSource") DataSource dataSource) throws Exception {
+	@Bean(name = "toGtSqlSessionFactory")
+	public SqlSessionFactory toGtSqlSessionFactory(@Qualifier("toGtDataSource") DataSource dataSource)
+			throws Exception {
 		SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
 		bean.setDataSource(dataSource);
 		return bean.getObject();
 	}
 
-	@Bean(name = "toTransactionManager")
-	public DataSourceTransactionManager toTransactionManager(@Qualifier("toDataSource") DataSource dataSource) {
+	@Bean(name = "toGtTransactionManager")
+	public DataSourceTransactionManager toGtTransactionManager(@Qualifier("toGtDataSource") DataSource dataSource) {
 		return new DataSourceTransactionManager(dataSource);
 	}
 
-	@Bean(name = "toSqlSessionTemplate")
-	public SqlSessionTemplate toSqlSessionTemplate(
-			@Qualifier("toSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
+	@Bean(name = "toGtSqlSessionTemplate")
+	public SqlSessionTemplate toGtSqlSessionTemplate(
+			@Qualifier("toGtSqlSessionFactory") SqlSessionFactory sqlSessionFactory) throws Exception {
 		return new SqlSessionTemplate(sqlSessionFactory);
 	}
 
-	@Bean(name = "toJdbcTemplate")
-	public JdbcTemplate toJdbcTemplate(@Qualifier("toDataSource") DataSource dataSource) {
+	@Bean(name = "toGtJdbcTemplate")
+	public JdbcTemplate toGtJdbcTemplate(@Qualifier("toGtDataSource") DataSource dataSource) {
 		return new JdbcTemplate(dataSource);
 	}
 }
