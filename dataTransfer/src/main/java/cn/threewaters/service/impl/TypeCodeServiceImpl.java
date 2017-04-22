@@ -22,7 +22,7 @@ public class TypeCodeServiceImpl extends BaseServiceImpl implements TypeCodeServ
 
 	private static final Logger logger = LoggerFactory.getLogger(TypeCodeServiceImpl.class);
 
-	public List<Map<String, Object>> execute() {
+	public void execute() {
 		logger.info("开始进行============仓房类别信息============数据转换");
 		logger.info("----开始====删除目标库全部仓房类别信息");
 		toGtJdbcTemplate.execute("delete from dm_kdcflx");
@@ -53,7 +53,6 @@ public class TypeCodeServiceImpl extends BaseServiceImpl implements TypeCodeServ
 		logger.info("结束进行============仓房类别信息============数据转换,源表条数：" + sourceTypeCodeResult.size()
 				+ "    转入目标表dm_kdcflx条数：" + insertSQL.size());
 
-		return toResult;
 	}
 
 }

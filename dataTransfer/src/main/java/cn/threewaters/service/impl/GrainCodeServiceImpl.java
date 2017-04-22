@@ -22,7 +22,7 @@ public class GrainCodeServiceImpl extends BaseServiceImpl implements GrainCodeSe
 
 	private static final Logger logger = LoggerFactory.getLogger(GrainCodeServiceImpl.class);
 
-	public List<Map<String, Object>> execute() {
+	public void execute() {
 		logger.info("开始进行============粮食类别信息============数据转换");
 		logger.info("----开始====删除目标库全部粮食类别信息");
 		toGtJdbcTemplate.execute("delete from dm_crk_lspz");
@@ -53,7 +53,6 @@ public class GrainCodeServiceImpl extends BaseServiceImpl implements GrainCodeSe
 		logger.info("结束进行============粮食类别信息============数据转换,源表条数：" + sourceGrainCodeResult.size()
 				+ "    转入目标表dm_crk_lspz条数：" + insertSQL.size());
 
-		return toResult;
 	}
 
 }

@@ -21,7 +21,7 @@ public class StoreHouseServiceImpl extends BaseServiceImpl implements StoreHouse
 
 	private static final Logger logger = LoggerFactory.getLogger(StoreHouseServiceImpl.class);
 
-	public List<Map<String, Object>> execute(String lkbh) {
+	public void execute(String lkbh) {
 		logger.info("开始进行============仓房信息============数据转换");
 		logger.info("----开始====删除粮库编号为" + lkbh + "的仓房信息");
 		toCwlwJdbcTemplate.execute("delete from cwlw_storehouse where LKBH = '" + lkbh + "'");
@@ -70,7 +70,6 @@ public class StoreHouseServiceImpl extends BaseServiceImpl implements StoreHouse
 		logger.info("结束进行============仓房信息============数据转换,源表条数：" + sourceStoreHouseResult.size()
 				+ "    转入目标表cwlw_storehouse条数：" + insertSQL.size());
 
-		return toResult;
 	}
 
 }
