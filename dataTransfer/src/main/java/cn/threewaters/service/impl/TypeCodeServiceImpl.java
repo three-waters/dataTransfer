@@ -23,15 +23,15 @@ public class TypeCodeServiceImpl extends BaseServiceImpl implements TypeCodeServ
 	private static final Logger logger = LoggerFactory.getLogger(TypeCodeServiceImpl.class);
 
 	public void execute() {
-		System.out.println("开始进行============仓房类别信息============数据转换");
-		System.out.println("----开始====删除目标库全部仓房类别信息");
+		logger.info("开始进行============仓房类别信息============数据转换");
+		logger.info("----开始====删除目标库全部仓房类别信息");
 		toGtJdbcTemplate.execute("delete from dm_kdcflx");
-		System.out.println("----结束====删除目标库全部仓房类别信息");
-		System.out.println("----开始====获取源库仓房类别信息");
+		logger.info("----结束====删除目标库全部仓房类别信息");
+		logger.info("----开始====获取源库仓房类别信息");
 		List<Map<String, Object>> sourceTypeCodeResult = fromJdbcTemplate
 				.queryForList("select TypeCode,HouseType from TypeCode");
-		System.out.println("----结束====获取源库仓房类别信息");
-		System.out.println("----开始====转换仓房类别信息");
+		logger.info("----结束====获取源库仓房类别信息");
+		logger.info("----开始====转换仓房类别信息");
 		List<Map<String, Object>> toResult = Lists.newArrayList();
 		for (Map<String, Object> soureRow : sourceTypeCodeResult) {
 			Map<String, Object> toRow = Maps.newHashMap();
@@ -43,14 +43,14 @@ public class TypeCodeServiceImpl extends BaseServiceImpl implements TypeCodeServ
 			toRow.put("BH", soureRow.get("TypeCode"));
 			toRow.put("MC", FormatterUtil.trim(soureRow.get("HouseType")));
 		}
-		System.out.println("----结束====转换仓房类别信息");
-		System.out.println("----开始====生成仓房类别信息SQL");
+		logger.info("----结束====转换仓房类别信息");
+		logger.info("----开始====生成仓房类别信息SQL");
 		List<String> insertSQL = SQLUtil.toInsertSQL(toResult, "dm_kdcflx");
-		System.out.println("----结束====生成仓房类别信息SQL");
-		System.out.println("----开始====插入仓房类别信息");
+		logger.info("----结束====生成仓房类别信息SQL");
+		logger.info("----开始====插入仓房类别信息");
 		toGtJdbcTemplate.batchUpdate(insertSQL.toArray(new String[insertSQL.size()]));
-		System.out.println("----结束====插入仓房类别信息");
-		System.out.println("结束进行============仓房类别信息============数据转换,源表条数：" + sourceTypeCodeResult.size()
+		logger.info("----结束====插入仓房类别信息");
+		logger.info("结束进行============仓房类别信息============数据转换,源表条数：" + sourceTypeCodeResult.size()
 				+ "    转入目标表dm_kdcflx条数：" + insertSQL.size());
 
 	}

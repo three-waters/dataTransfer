@@ -1,0 +1,178 @@
+13:38:28.480- Starting Application on Udesk-waters with PID 9116 (E:\local_git\dataTransfer\dataTransfer\target\classes started by Udesk-waters in E:\local_git\dataTransfer\dataTransfer)
+13:38:28.486- No active profile set, falling back to default profiles: default
+13:38:28.770- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@119020fb: startup date [Sun Apr 23 13:38:28 CST 2017]; root of context hierarchy
+13:38:30.831- No MyBatis mapper was found in '[cn.threewaters]' package. Please check your configuration.
+13:38:31.825- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+13:38:32.449- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8209f202] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:32.462- Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$cb1c2820] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:32.529- Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$bf8fecc4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:32.583- Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:32.604- Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:32.613- Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$612b5fa5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:32.639- Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:32.640- Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+13:38:33.655- Tomcat initialized with port(s): 9999 (http)
+13:38:33.683- Starting service Tomcat
+13:38:33.685- Starting Servlet Engine: Apache Tomcat/8.5.11
+13:38:34.071- Initializing Spring embedded WebApplicationContext
+13:38:34.072- Root WebApplicationContext: initialization completed in 5302 ms
+13:38:34.503- Mapping servlet: 'dispatcherServlet' to [/]
+13:38:34.512- Mapping filter: 'characterEncodingFilter' to: [/*]
+13:38:34.512- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+13:38:34.512- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+13:38:34.513- Mapping filter: 'requestContextFilter' to: [/*]
+13:38:36.608- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@119020fb: startup date [Sun Apr 23 13:38:28 CST 2017]; root of context hierarchy
+13:38:36.824- Mapped "{[/all/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.all(java.lang.String)
+13:38:36.826- Mapped "{[/storeHouse/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.storeHouse(java.lang.String)
+13:38:36.827- Mapped "{[/grainCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.grainCode()
+13:38:36.827- Mapped "{[/testData/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.testData(java.lang.String)
+13:38:36.827- Mapped "{[/typeCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.typeCode()
+13:38:36.830- Mapped "{[/test/1],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin1()
+13:38:36.830- Mapped "{[/test/3],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin3()
+13:38:36.831- Mapped "{[/test/2],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin2()
+13:38:36.835- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+13:38:36.837- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+13:38:36.899- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:38:36.899- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:38:37.002- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+13:38:37.069- Adding welcome page: class path resource [static/index.html]
+13:38:37.634- Registering beans for JMX exposure on startup
+13:38:37.685- =======================开始进行数据库连接测试=====================
+13:38:38.108- ========================================================
+13:38:38.108- ===========正在检测SQLSERVER源数据库连接=================
+13:38:38.108- ========================================================
+13:38:38.292- ====================StoreHouse检测通过
+13:38:38.294- ====================PointInfor检测通过
+13:38:38.295- ====================TestData检测通过
+13:38:38.297- ====================GrainCode检测通过
+13:38:38.298- ====================TypeCode检测通过
+13:38:38.299- ========================================================
+13:38:38.299- ===========SQLSERVER源数据库连接检测通过=================
+13:38:38.299- ========================================================
+13:38:38.299- 
+13:38:38.299- 
+13:38:38.299- =======================================================
+13:38:38.299- ===========正在检测目标库CWLW数据库连接=================
+13:38:38.299- =======================================================
+13:38:38.957- ====================cwlw_storehouse检测通过
+13:38:38.961- ====================cwlw_wsjc_lqjbxx检测通过
+13:38:38.976- ====================cwlw_wsjc_cfjcwd检测通过
+13:38:38.977- =======================================================
+13:38:38.977- ===========目标库CWLW数据库连接检测通过=================
+13:38:38.977- =======================================================
+13:38:38.977- 
+13:38:38.977- 
+13:38:38.977- =======================================================
+13:38:38.977- ==============正在检测目标库GT数据库连接=================
+13:38:38.977- =======================================================
+13:38:39.139- ====================dm_crk_lspz检测通过
+13:38:39.141- ====================dm_kdcflx检测通过
+13:38:39.141- =======================================================
+13:38:39.141- =============目标库GT数据库连接检测通过==================
+13:38:39.142- =======================================================
+13:38:39.142- 
+13:38:39.142- 
+13:38:39.146- =======================数据库连接测试通过=====================
+13:38:39.146- 
+13:38:39.146- 
+13:38:39.146- ============================================
+13:38:39.146- ===================请注意===================
+13:38:39.146- ============================================
+13:38:39.146- 20秒后开始进行数据转换，转换粮库编号：9999
+13:38:39.146- ============================================
+13:38:39.146- ===================请注意===================
+13:38:39.146- ============================================
+13:38:39.147- 
+13:38:39.147- 
+13:38:39.255- Failed to start end point associated with ProtocolHandler [http-nio-9999]
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:545)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at cn.threewaters.Application.main(Application.java:21)
+13:38:39.277- Failed to start connector [Connector[HTTP/1.1-9999]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-9999]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:247)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:190)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.__refresh(AbstractApplicationContext.java:545)
+	at org.springframework.context.support.AbstractApplicationContext.jrLockAndRefresh(AbstractApplicationContext.java)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:737)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at cn.threewaters.Application.main(Application.java:21)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:980)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:573)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:993)
+	... 14 common frames omitted
+13:38:39.320- Stopping service Tomcat
+13:38:39.368- 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+13:38:39.388- 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 9999 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 9999, or configure this application to listen on another port.
+
+13:38:39.391- Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@119020fb: startup date [Sun Apr 23 13:38:28 CST 2017]; root of context hierarchy
+13:38:39.396- Unregistering JMX-exposed beans on shutdown
+13:39:13.107- Starting Application on Udesk-waters with PID 7540 (E:\local_git\dataTransfer\dataTransfer\target\classes started by Udesk-waters in E:\local_git\dataTransfer\dataTransfer)
+13:39:13.113- No active profile set, falling back to default profiles: default
+13:39:13.421- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Sun Apr 23 13:39:13 CST 2017]; root of context hierarchy
+2017-04-113 13:39:59.181- Starting Application on Udesk-waters with PID 11240 (E:\local_git\dataTransfer\dataTransfer\target\classes started by Udesk-waters in E:\local_git\dataTransfer\dataTransfer)
+2017-04-113 13:39:59.189- No active profile set, falling back to default profiles: default
+2017-04-113 13:39:59.515- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Sun Apr 23 13:39:59 CST 2017]; root of context hierarchy
+2017-04-23 13:40:26.202- Starting Application on Udesk-waters with PID 8824 (E:\local_git\dataTransfer\dataTransfer\target\classes started by Udesk-waters in E:\local_git\dataTransfer\dataTransfer)
+2017-04-23 13:40:26.219- No active profile set, falling back to default profiles: default
+2017-04-23 13:40:26.513- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2d746ce4: startup date [Sun Apr 23 13:40:26 CST 2017]; root of context hierarchy
+2017-04-23 13:40:28.545- No MyBatis mapper was found in '[cn.threewaters]' package. Please check your configuration.
+2017-04-23 13:41:20.716- Starting Application on Udesk-waters with PID 5148 (E:\local_git\dataTransfer\dataTransfer\target\classes started by Udesk-waters in E:\local_git\dataTransfer\dataTransfer)
+2017-04-23 13:41:20.722- No active profile set, falling back to default profiles: default
+2017-04-23 13:41:21.043- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34a875b3: startup date [Sun Apr 23 13:41:21 CST 2017]; root of context hierarchy
+2017-04-23 13:41:23.019- No MyBatis mapper was found in '[cn.threewaters]' package. Please check your configuration.
+2017-04-23 13:41:24.062- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-04-23 13:41:24.710- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff682d46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)

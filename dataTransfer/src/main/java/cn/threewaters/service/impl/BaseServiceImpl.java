@@ -41,14 +41,14 @@ public class BaseServiceImpl implements BaseService {
 			if (i % INSERT_COUNT == 0) {
 				sum = sum + insertList.size();
 				jdbcTemplate.batchUpdate(insertList.toArray(new String[insertList.size()]));
-				System.out.println("============成功插入" + insertList.size() + "条，完成" + sum*100 / count + "%");
+				logger.info("============成功插入" + insertList.size() + "条，完成" + sum*100 / count + "%");
 				insertList = Lists.newArrayList();
 			}
 		}
 		if (insertList.size() > 0) {
 			sum = sum + insertList.size();
 			jdbcTemplate.batchUpdate(insertList.toArray(new String[insertList.size()]));
-			System.out.println("============成功插入" + insertList.size() + "条，完成" + sum*100 / sqlList.size() + "%");
+			logger.info("============成功插入" + insertList.size() + "条，完成" + sum*100 / sqlList.size() + "%");
 		}
 	}
 }
