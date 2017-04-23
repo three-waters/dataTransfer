@@ -176,3 +176,256 @@ Verify the connector's configuration, identify and stop any process that's liste
 2017-04-23 13:41:23.019- No MyBatis mapper was found in '[cn.threewaters]' package. Please check your configuration.
 2017-04-23 13:41:24.062- JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
 2017-04-23 13:41:24.710- Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff682d46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:54.018::: Starting Application on Udesk-waters with PID 10912 (E:\local_git\dataTransfer\dataTransfer\target\classes started by Udesk-waters in E:\local_git\dataTransfer\dataTransfer)
+2017-04-23 15:19:54.044::: No active profile set, falling back to default profiles: default
+2017-04-23 15:19:54.407::: Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4912d525: startup date [Sun Apr 23 15:19:54 CST 2017]; root of context hierarchy
+2017-04-23 15:19:56.823::: No MyBatis mapper was found in '[cn.threewaters]' package. Please check your configuration.
+2017-04-23 15:19:58.070::: JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-04-23 15:19:58.860::: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e617c34b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:58.884::: Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$2f29f969] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:58.970::: Bean 'org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$$EnhancerBySpringCGLIB$$239dbe0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:59.047::: Bean 'spring.cache-org.springframework.boot.autoconfigure.cache.CacheProperties' of type [org.springframework.boot.autoconfigure.cache.CacheProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:59.073::: Bean 'cacheManagerCustomizers' of type [org.springframework.boot.autoconfigure.cache.CacheManagerCustomizers] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:59.082::: Bean 'org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration' of type [org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration$$EnhancerBySpringCGLIB$$c53930ee] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:59.119::: Bean 'cacheManager' of type [org.springframework.cache.concurrent.ConcurrentMapCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:19:59.123::: Bean 'cacheAutoConfigurationValidator' of type [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration$CacheManagerValidator] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-23 15:20:00.323::: Tomcat initialized with port(s): 9999 (http)
+2017-04-23 15:20:00.353::: Starting service Tomcat
+2017-04-23 15:20:00.355::: Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-04-23 15:20:00.841::: Initializing Spring embedded WebApplicationContext
+2017-04-23 15:20:00.842::: Root WebApplicationContext: initialization completed in 6444 ms
+2017-04-23 15:20:01.485::: Mapping servlet: 'dispatcherServlet' to [/]
+2017-04-23 15:20:01.495::: Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-04-23 15:20:01.496::: Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-04-23 15:20:01.497::: Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-04-23 15:20:01.498::: Mapping filter: 'requestContextFilter' to: [/*]
+2017-04-23 15:20:04.081::: Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4912d525: startup date [Sun Apr 23 15:19:54 CST 2017]; root of context hierarchy
+2017-04-23 15:20:04.321::: Mapped "{[/all/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.all(java.lang.String)
+2017-04-23 15:20:04.323::: Mapped "{[/testData/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.testData(java.lang.String)
+2017-04-23 15:20:04.324::: Mapped "{[/grainCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.grainCode()
+2017-04-23 15:20:04.324::: Mapped "{[/typeCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.typeCode()
+2017-04-23 15:20:04.325::: Mapped "{[/storeHouse/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.storeHouse(java.lang.String)
+2017-04-23 15:20:04.329::: Mapped "{[/test/1],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin1()
+2017-04-23 15:20:04.331::: Mapped "{[/test/2],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin2()
+2017-04-23 15:20:04.334::: Mapped "{[/test/3],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin3()
+2017-04-23 15:20:04.342::: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-23 15:20:04.344::: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-23 15:20:04.451::: Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-23 15:20:04.451::: Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-23 15:20:04.581::: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-23 15:20:04.661::: Adding welcome page: class path resource [static/index.html]
+2017-04-23 15:20:05.590::: Registering beans for JMX exposure on startup
+2017-04-23 15:20:05.645::: =======================开始进行数据库连接测试=====================
+2017-04-23 15:20:06.081::: ========================================================
+2017-04-23 15:20:06.081::: ===========正在检测SQLSERVER源数据库连接=================
+2017-04-23 15:20:06.081::: ========================================================
+2017-04-23 15:20:06.268::: ====================StoreHouse检测通过
+2017-04-23 15:20:06.272::: ====================PointInfor检测通过
+2017-04-23 15:20:06.274::: ====================TestData检测通过
+2017-04-23 15:20:06.277::: ====================GrainCode检测通过
+2017-04-23 15:20:06.278::: ====================TypeCode检测通过
+2017-04-23 15:20:06.279::: ========================================================
+2017-04-23 15:20:06.279::: ===========SQLSERVER源数据库连接检测通过=================
+2017-04-23 15:20:06.279::: ========================================================
+2017-04-23 15:20:06.279::: 
+2017-04-23 15:20:06.279::: 
+2017-04-23 15:20:06.279::: =======================================================
+2017-04-23 15:20:06.279::: ===========正在检测目标库CWLW数据库连接=================
+2017-04-23 15:20:06.279::: =======================================================
+2017-04-23 15:20:07.084::: ====================cwlw_storehouse检测通过
+2017-04-23 15:20:07.087::: ====================cwlw_wsjc_lqjbxx检测通过
+2017-04-23 15:20:07.115::: ====================cwlw_wsjc_cfjcwd检测通过
+2017-04-23 15:20:07.116::: =======================================================
+2017-04-23 15:20:07.116::: ===========目标库CWLW数据库连接检测通过=================
+2017-04-23 15:20:07.116::: =======================================================
+2017-04-23 15:20:07.116::: 
+2017-04-23 15:20:07.118::: 
+2017-04-23 15:20:07.119::: =======================================================
+2017-04-23 15:20:07.119::: ==============正在检测目标库GT数据库连接=================
+2017-04-23 15:20:07.119::: =======================================================
+2017-04-23 15:20:07.280::: ====================dm_crk_lspz检测通过
+2017-04-23 15:20:07.283::: ====================dm_kdcflx检测通过
+2017-04-23 15:20:07.283::: =======================================================
+2017-04-23 15:20:07.283::: =============目标库GT数据库连接检测通过==================
+2017-04-23 15:20:07.283::: =======================================================
+2017-04-23 15:20:07.283::: 
+2017-04-23 15:20:07.284::: 
+2017-04-23 15:20:07.289::: =======================数据库连接测试通过=====================
+2017-04-23 15:20:07.289::: 
+2017-04-23 15:20:07.289::: 
+2017-04-23 15:20:07.289::: ============================================
+2017-04-23 15:20:07.289::: ===================请注意===================
+2017-04-23 15:20:07.289::: ============================================
+2017-04-23 15:20:07.289::: 20秒后开始进行数据转换，转换粮库编号：9999
+2017-04-23 15:20:07.289::: ============================================
+2017-04-23 15:20:07.290::: ===================请注意===================
+2017-04-23 15:20:07.290::: ============================================
+2017-04-23 15:20:07.290::: 
+2017-04-23 15:20:07.291::: 
+2017-04-23 15:20:07.497::: Tomcat started on port(s): 9999 (http)
+2017-04-23 15:20:07.514::: Started Application in 16.509 seconds (JVM running for 20.593)
+2017-04-23 15:20:27.306::: ===================================================
+2017-04-23 15:20:27.306::: ===================================================
+2017-04-23 15:20:27.306::: ===================================================
+2017-04-23 15:20:27.306::: ================数据转换正式开始====================
+2017-04-23 15:20:27.306::: ===================================================
+2017-04-23 15:20:27.306::: ===================================================
+2017-04-23 15:20:27.306::: ===================================================
+2017-04-23 15:20:27.309::: 开始进行============仓房信息============数据转换
+2017-04-23 15:20:27.309::: ----开始====删除粮库编号为9999的仓房信息
+2017-04-23 15:20:27.368::: ----结束====删除粮库编号为9999的仓房信息
+2017-04-23 15:20:27.368::: ----开始====获取源库仓房信息
+2017-04-23 15:20:27.373::: ----结束====获取源库仓房信息
+2017-04-23 15:20:27.373::: ----开始====获取源库电缆信息
+2017-04-23 15:20:27.383::: ----结束====获取源库电缆信息
+2017-04-23 15:20:27.383::: ----开始====转换仓房信息
+2017-04-23 15:20:27.414::: ----结束====转换仓房信息
+2017-04-23 15:20:27.418::: ----开始====生成仓房信息SQL
+2017-04-23 15:20:27.432::: ----结束====生成仓房信息SQL
+2017-04-23 15:20:27.432::: ----开始====插入仓房信息
+2017-04-23 15:20:27.674::: ----结束====插入仓房信息
+2017-04-23 15:20:27.674::: 结束进行============仓房信息============数据转换,源表条数：5    转入目标表cwlw_storehouse条数：5
+2017-04-23 15:20:27.677::: 
+2017-04-23 15:20:27.677::: 
+2017-04-23 15:20:27.679::: 开始进行============仓房类别信息============数据转换
+2017-04-23 15:20:27.679::: ----开始====删除目标库全部仓房类别信息
+2017-04-23 15:20:27.726::: ----结束====删除目标库全部仓房类别信息
+2017-04-23 15:20:27.726::: ----开始====获取源库仓房类别信息
+2017-04-23 15:20:27.732::: ----结束====获取源库仓房类别信息
+2017-04-23 15:20:27.733::: ----开始====转换仓房类别信息
+2017-04-23 15:20:27.734::: ----结束====转换仓房类别信息
+2017-04-23 15:20:27.735::: ----开始====生成仓房类别信息SQL
+2017-04-23 15:20:27.735::: ----结束====生成仓房类别信息SQL
+2017-04-23 15:20:27.735::: ----开始====插入仓房类别信息
+2017-04-23 15:20:29.405::: ----结束====插入仓房类别信息
+2017-04-23 15:20:29.405::: 结束进行============仓房类别信息============数据转换,源表条数：35    转入目标表dm_kdcflx条数：35
+2017-04-23 15:20:29.408::: 
+2017-04-23 15:20:29.408::: 
+2017-04-23 15:20:29.410::: 开始进行============粮食类别信息============数据转换
+2017-04-23 15:20:29.410::: ----开始====删除目标库全部粮食类别信息
+2017-04-23 15:20:29.474::: ----结束====删除目标库全部粮食类别信息
+2017-04-23 15:20:29.475::: ----开始====获取源库粮食类别信息
+2017-04-23 15:20:29.497::: ----结束====获取源库粮食类别信息
+2017-04-23 15:20:29.498::: ----开始====转换粮食类别信息
+2017-04-23 15:20:29.509::: ----结束====转换粮食类别信息
+2017-04-23 15:20:29.509::: ----开始====生成粮食类别信息SQL
+2017-04-23 15:20:29.516::: ----结束====生成粮食类别信息SQL
+2017-04-23 15:20:29.518::: ----开始====插入粮食类别信息
+2017-04-23 15:20:41.604::: ----结束====插入粮食类别信息
+2017-04-23 15:20:41.604::: 结束进行============粮食类别信息============数据转换,源表条数：222    转入目标表dm_crk_lspz条数：222
+2017-04-23 15:20:41.607::: 
+2017-04-23 15:20:41.607::: 
+2017-04-23 15:20:41.609::: 开始进行============检测数据============数据转换
+2017-04-23 15:20:41.609::: ----开始====删除粮库编号为9999的检测数据
+2017-04-23 15:20:41.855::: ----结束====删除粮库编号为9999的检测数据
+2017-04-23 15:20:41.855::: ----开始====获取源库检测数据
+2017-04-23 15:20:41.863::: ----结束====获取源库检测数据
+2017-04-23 15:20:41.864::: ----开始====获取源库传感器数据
+2017-04-23 15:20:41.924::: ----结束====获取源库传感器数据
+2017-04-23 15:20:41.926::: ----开始====转换检测数据
+2017-04-23 15:22:11.482::: ----结束====转换检测数据
+2017-04-23 15:22:11.482::: ----开始====生成检测数据SQL
+2017-04-23 15:22:11.518::: ----结束====生成检测数据SQL
+2017-04-23 15:22:11.518::: ----开始====插入检测数据,预估数据量   LQJBXX:1    CFJCWD:336
+2017-04-23 15:22:11.563::: ============成功插入1条，完成100%
+2017-04-23 15:22:29.588::: ============成功插入336条，完成100%
+2017-04-23 15:22:29.588::: ----结束====插入检测数据
+2017-04-23 15:22:29.588::: 结束进行============检测数据============数据转换,源表条数：1    转入目标表cwlw_wsjc_lqjbxx条数：1    转入目标表cwlw_wsjc_cfjcwd条数：336
+2017-04-23 15:22:29.591::: 
+2017-04-23 15:22:29.591::: 
+2017-04-23 15:22:29.591::: ===================================================
+2017-04-23 15:22:29.591::: ===================================================
+2017-04-23 15:22:29.591::: ===================================================
+2017-04-23 15:22:29.591::: ================数据转换正式结束====================
+2017-04-23 15:22:29.592::: ===================================================
+2017-04-23 15:22:29.592::: ===================================================
+2017-04-23 15:22:29.592::: ===================================================
+2017-04-23 15:22:48.761::: Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-04-23 15:22:48.762::: FrameworkServlet 'dispatcherServlet': initialization started
+2017-04-23 15:22:48.862::: FrameworkServlet 'dispatcherServlet': initialization completed in 100 ms
+2017-04-23 15:22:48.983::: 开始进行============检测数据============数据转换
+2017-04-23 15:22:48.983::: ----开始====删除粮库编号为9999的检测数据
+2017-04-23 15:22:49.154::: ----结束====删除粮库编号为9999的检测数据
+2017-04-23 15:22:49.154::: ----开始====获取源库检测数据
+2017-04-23 15:22:49.157::: ----结束====获取源库检测数据
+2017-04-23 15:22:49.157::: ----开始====获取源库传感器数据
+2017-04-23 15:22:49.191::: ----结束====获取源库传感器数据
+2017-04-23 15:22:49.192::: ----开始====转换检测数据
+2017-04-23 15:23:28.239::: ----结束====转换检测数据
+2017-04-23 15:23:28.239::: ----开始====生成检测数据SQL
+2017-04-23 15:23:28.262::: ----结束====生成检测数据SQL
+2017-04-23 15:23:28.262::: ----开始====插入检测数据,预估数据量   LQJBXX:1    CFJCWD:336
+2017-04-23 15:23:28.324::: ============成功插入1条，完成100%
+2017-04-23 15:23:47.390::: ============成功插入336条，完成100%
+2017-04-23 15:23:47.390::: ----结束====插入检测数据
+2017-04-23 15:23:47.390::: 结束进行============检测数据============数据转换,源表条数：1    转入目标表cwlw_wsjc_lqjbxx条数：1    转入目标表cwlw_wsjc_cfjcwd条数：336
+2017-04-23 15:23:50.654::: 开始进行============检测数据============数据转换
+2017-04-23 15:23:50.654::: ----开始====删除粮库编号为9999的检测数据
+2017-04-23 15:23:50.827::: ----结束====删除粮库编号为9999的检测数据
+2017-04-23 15:23:50.827::: ----开始====获取源库检测数据
+2017-04-23 15:23:50.831::: ----结束====获取源库检测数据
+2017-04-23 15:23:50.831::: ----开始====获取源库传感器数据
+2017-04-23 15:23:50.850::: ----结束====获取源库传感器数据
+2017-04-23 15:23:50.850::: ----开始====转换检测数据
+2017-04-23 15:24:23.659::: ----结束====转换检测数据
+2017-04-23 15:24:23.672::: ----开始====生成检测数据SQL
+2017-04-23 15:24:23.684::: ----结束====生成检测数据SQL
+2017-04-23 15:24:23.685::: ----开始====插入检测数据,预估数据量   LQJBXX:1    CFJCWD:336
+2017-04-23 15:24:23.728::: ============成功插入1条，完成100%
+2017-04-23 15:24:42.203::: ============成功插入336条，完成100%
+2017-04-23 15:24:42.203::: ----结束====插入检测数据
+2017-04-23 15:24:42.203::: 结束进行============检测数据============数据转换,源表条数：1    转入目标表cwlw_wsjc_lqjbxx条数：1    转入目标表cwlw_wsjc_cfjcwd条数：336
+2017-04-23 15:25:18.105::: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-23 15:25:18.128::: Mapped "{[/all/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.all(java.lang.String)
+2017-04-23 15:25:18.133::: Mapped "{[/testData/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.testData(java.lang.String)
+2017-04-23 15:25:18.136::: Mapped "{[/grainCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.grainCode()
+2017-04-23 15:25:18.138::: Mapped "{[/typeCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.typeCode()
+2017-04-23 15:25:18.142::: Mapped "{[/storeHouse/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.storeHouse(java.lang.String)
+2017-04-23 15:25:18.181::: Mapped "{[/test/1],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin1()
+2017-04-23 15:25:18.198::: Mapped "{[/test/2],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin2()
+2017-04-23 15:25:18.202::: Mapped "{[/test/3],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin3()
+2017-04-23 15:25:18.222::: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-23 15:25:18.223::: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-23 15:25:18.247::: 开始进行============检测数据============数据转换
+2017-04-23 15:25:18.247::: ----开始====删除粮库编号为9999的检测数据
+2017-04-23 15:25:18.418::: ----结束====删除粮库编号为9999的检测数据
+2017-04-23 15:25:18.418::: ----开始====获取源库检测数据
+2017-04-23 15:25:18.422::: ----结束====获取源库检测数据
+2017-04-23 15:25:18.423::: ----开始====获取源库传感器数据
+2017-04-23 15:25:18.491::: ----结束====获取源库传感器数据
+2017-04-23 15:25:18.491::: ----开始====转换检测数据
+2017-04-23 15:25:51.363::: ----结束====转换检测数据
+2017-04-23 15:25:51.363::: ----开始====生成检测数据SQL
+2017-04-23 15:25:51.404::: ----结束====生成检测数据SQL
+2017-04-23 15:25:51.405::: ----开始====插入检测数据,预估数据量   LQJBXX:1    CFJCWD:336
+2017-04-23 15:25:51.462::: ============成功插入1条，完成100%
+2017-04-23 15:26:10.303::: ============成功插入336条，完成100%
+2017-04-23 15:26:10.303::: ----结束====插入检测数据
+2017-04-23 15:26:10.303::: 结束进行============检测数据============数据转换,源表条数：1    转入目标表cwlw_wsjc_lqjbxx条数：1    转入目标表cwlw_wsjc_cfjcwd条数：336
+2017-04-23 15:31:52.656::: Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-23 15:31:52.672::: Mapped "{[/all/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.all(java.lang.String)
+2017-04-23 15:31:52.673::: Mapped "{[/testData/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.testData(java.lang.String)
+2017-04-23 15:31:52.674::: Mapped "{[/grainCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.grainCode()
+2017-04-23 15:31:52.675::: Mapped "{[/typeCode],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.typeCode()
+2017-04-23 15:31:52.676::: Mapped "{[/storeHouse/{lkbh}],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.RunController.storeHouse(java.lang.String)
+2017-04-23 15:31:52.681::: Mapped "{[/test/1],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin1()
+2017-04-23 15:31:52.682::: Mapped "{[/test/2],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin2()
+2017-04-23 15:31:52.682::: Mapped "{[/test/3],methods=[GET]}" onto public java.lang.Object cn.threewaters.controller.TestController.begin3()
+2017-04-23 15:31:52.688::: Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-04-23 15:31:52.689::: Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-04-23 15:31:52.702::: 开始进行============检测数据============数据转换
+2017-04-23 15:31:52.702::: ----开始====删除粮库编号为9999的检测数据
+2017-04-23 15:31:52.885::: ----结束====删除粮库编号为9999的检测数据
+2017-04-23 15:31:52.886::: ----开始====获取源库检测数据
+2017-04-23 15:31:52.889::: ----结束====获取源库检测数据
+2017-04-23 15:31:52.889::: ----开始====获取源库传感器数据
+2017-04-23 15:31:52.915::: ----结束====获取源库传感器数据
+2017-04-23 15:31:52.915::: ----开始====转换检测数据
+2017-04-23 15:31:56.397::: ----结束====转换检测数据
+2017-04-23 15:31:56.397::: ----开始====生成检测数据SQL
+2017-04-23 15:31:56.410::: ----结束====生成检测数据SQL
+2017-04-23 15:31:56.410::: ----开始====插入检测数据,预估数据量   LQJBXX:1    CFJCWD:336
+2017-04-23 15:31:56.465::: ============成功插入1条，完成100%
+2017-04-23 15:32:15.764::: ============成功插入336条，完成100%
+2017-04-23 15:32:15.764::: ----结束====插入检测数据
+2017-04-23 15:32:15.764::: 结束进行============检测数据============数据转换,源表条数：1    转入目标表cwlw_wsjc_lqjbxx条数：1    转入目标表cwlw_wsjc_cfjcwd条数：336

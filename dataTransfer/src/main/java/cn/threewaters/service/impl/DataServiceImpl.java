@@ -30,11 +30,11 @@ public class DataServiceImpl extends BaseServiceImpl implements DataService {
 		logger.info("----结束====删除粮库编号为" + lkbh + "的检测数据");
 		logger.info("----开始====获取源库检测数据");
 		List<Map<String, Object>> sourceTestDataResult = fromJdbcTemplate.queryForList(
-				"select 仓房编号,仓房温度最大值,仓房温度最小值,仓房温度平均值,仓房外温,仓房内温,仓房外湿,仓房内湿,粮食水分,检测日期,温度值集合,(select 粮食品种标准编码 from StoreHouse where StoreHouse.[仓房编号] = TestData.[仓房编号]) as 粮食品种 from TestData order by 仓房编号");
+				"select 仓房编号,仓房温度最大值,仓房温度最小值,仓房温度平均值,仓房外温,仓房内温,仓房外湿,仓房内湿,粮食水分,检测日期,温度值集合,(select 粮食品种标准编码 from StoreHouse where StoreHouse.[仓房编号] = TestData.[仓房编号]) as 粮食品种 from TestData  order by 仓房编号");
 		logger.info("----结束====获取源库检测数据");
 		logger.info("----开始====获取源库传感器数据");
 		List<Map<String, Object>> sourcePointerResult = fromJdbcTemplate
-				.queryForList("select 仓房编号,电缆编号,行编号,列编号,层编号 from PointInfor order by 仓房编号,行编号 desc,列编号 desc,层编号 desc");
+				.queryForList("select 仓房编号,电缆编号,行编号,列编号,层编号 from PointInfor order by 仓房编号,列编号 desc, 行编号 desc,层编号 desc");
 		logger.info("----结束====获取源库传感器数据");
 		logger.info("----开始====转换检测数据");
 		List<Map<String, Object>> toLQJBXXResult = Lists.newArrayList();
@@ -42,7 +42,7 @@ public class DataServiceImpl extends BaseServiceImpl implements DataService {
 		for (Map<String, Object> soureRow : sourceTestDataResult) {
 			String temps = "=" + (String) soureRow.get("温度值集合") + "=";
 			temps = temps.replaceAll("NULL", "=NULL=").replaceAll(" ", "=").replaceAll("-", "=-");
-			temps = temps.replaceAll("==", "=").replaceAll("===", "=").replaceAll("====", "=").replaceAll("\r", "")
+			temps = temps.replaceAll("====", "=").replaceAll("===", "=").replaceAll("==", "=").replaceAll("\r", "")
 					.replaceAll("\n", "");
 			temps = temps.substring(1, temps.length() - 1);
 			String[] tempArray = temps.split("=");
