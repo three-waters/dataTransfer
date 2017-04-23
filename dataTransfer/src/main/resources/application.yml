@@ -1,15 +1,13 @@
 server:
   port: 9999
   tomcat.uri-encoding: UTF-8
+myini.lkbh: 9999
 spring:
   application:
     name: dataTransfer
   datasource:
     from:
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-      #url: jdbc:sqlserver://192.168.80.253:1433;DatabaseName=sqlfb
-      #username: sa
-      #password: admin123
       url: jdbc:sqlserver://192.168.80.253:1433;DatabaseName=sqlfb
       username: sa
       password: admin123
