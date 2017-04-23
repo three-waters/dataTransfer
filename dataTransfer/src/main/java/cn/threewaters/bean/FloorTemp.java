@@ -13,7 +13,6 @@ public class FloorTemp {
 
 	public void add(String value) {
 		if (value != null && !value.equals("NULL") && !value.equals("null") && !value.equals("")) {
-			System.out.println(value);
 			temps.add(value);
 			if (pjwd == null) {
 				pjwd = value;

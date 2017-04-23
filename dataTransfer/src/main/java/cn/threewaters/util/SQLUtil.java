@@ -25,6 +25,12 @@ public class SQLUtil {
 					value_sb.append(entry.getValue());
 				} else if (entry.getValue() instanceof Date) {
 					value_sb.append("'").append(entry.getValue()).append("'");
+				} else if (entry.getValue() instanceof String) {
+					if (((String) (entry.getValue())).equals("") || ((String) (entry.getValue())).equals("NULL")) {
+						value_sb.append("").append("NULL").append("");
+					} else {
+						value_sb.append("'").append(entry.getValue()).append("'");
+					}
 				} else {
 					value_sb.append("'").append(entry.getValue()).append("'");
 				}

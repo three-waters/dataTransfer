@@ -59,6 +59,9 @@ public class DataServiceImpl extends BaseServiceImpl implements DataService {
 					toCFJCWDRow.put("JCHH", sourcePointerRow.get("行编号"));
 					toCFJCWDRow.put("JCBHS", sourcePointerRow.get("列编号"));
 					String temp = tempArray[index++];
+					if (temp != null && !temp.equals("NULL") && !temp.equals("null") && !temp.equals("")) {
+						temp = String.valueOf(Double.parseDouble(temp) / 10.00);
+					}
 					toCFJCWDRow.put("jcwd", temp);
 					toCFJCWDRow.put("JCRQ", soureRow.get("检测日期"));
 					toCFJCWDRow.put("DLBH", sourcePointerRow.get("电缆编号"));
@@ -140,14 +143,13 @@ public class DataServiceImpl extends BaseServiceImpl implements DataService {
 		List<String> insertSQL_toLQJBXXResult = SQLUtil.toInsertSQL(toLQJBXXResult, "cwlw_wsjc_lqjbxx");
 		List<String> insertSQL_toCFJCWDResult = SQLUtil.toInsertSQL(toCFJCWDResult, "cwlw_wsjc_cfjcwd");
 		logger.info("----结束====生成检测数据SQL");
-		logger.info("----开始====插入检测数据");
-		toCwlwJdbcTemplate.batchUpdate(insertSQL_toLQJBXXResult.toArray(new String[insertSQL_toLQJBXXResult.size()]));
-		toCwlwJdbcTemplate.batchUpdate(insertSQL_toCFJCWDResult.toArray(new String[insertSQL_toCFJCWDResult.size()]));
+		logger.info("----开始====插入检测数据,预估数据量   LQJBXX:" + insertSQL_toLQJBXXResult.size() + "    CFJCWD:"
+				+ insertSQL_toCFJCWDResult.size());
+		batchExecute(toCwlwJdbcTemplate, insertSQL_toLQJBXXResult);
+		batchExecute(toCwlwJdbcTemplate, insertSQL_toCFJCWDResult);
 		logger.info("----结束====插入检测数据");
 		logger.info("结束进行============检测数据============数据转换,源表条数：" + sourceTestDataResult.size()
 				+ "    转入目标表cwlw_wsjc_lqjbxx条数：" + insertSQL_toLQJBXXResult.size() + "    转入目标表cwlw_wsjc_cfjcwd条数："
 				+ insertSQL_toCFJCWDResult.size());
-
 	}
-
 }

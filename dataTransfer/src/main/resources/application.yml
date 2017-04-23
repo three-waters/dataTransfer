@@ -7,6 +7,9 @@ spring:
   datasource:
     from:
       driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      #url: jdbc:sqlserver://192.168.80.253:1433;DatabaseName=sqlfb
+      #username: sa
+      #password: admin123
       url: jdbc:sqlserver://192.168.80.253:1433;DatabaseName=sqlfb
       username: sa
       password: admin123
