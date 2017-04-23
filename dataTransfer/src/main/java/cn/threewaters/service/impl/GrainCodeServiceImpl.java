@@ -23,15 +23,15 @@ public class GrainCodeServiceImpl extends BaseServiceImpl implements GrainCodeSe
 	private static final Logger logger = LoggerFactory.getLogger(GrainCodeServiceImpl.class);
 
 	public void execute() {
-		logger.info("开始进行============粮食类别信息============数据转换");
-		logger.info("----开始====删除目标库全部粮食类别信息");
+		System.out.println("开始进行============粮食类别信息============数据转换");
+		System.out.println("----开始====删除目标库全部粮食类别信息");
 		toGtJdbcTemplate.execute("delete from dm_crk_lspz");
-		logger.info("----结束====删除目标库全部粮食类别信息");
-		logger.info("----开始====获取源库粮食类别信息");
+		System.out.println("----结束====删除目标库全部粮食类别信息");
+		System.out.println("----开始====获取源库粮食类别信息");
 		List<Map<String, Object>> sourceGrainCodeResult = fromJdbcTemplate
 				.queryForList("select GrainCode,GrainName from GrainCode");
-		logger.info("----结束====获取源库粮食类别信息");
-		logger.info("----开始====转换粮食类别信息");
+		System.out.println("----结束====获取源库粮食类别信息");
+		System.out.println("----开始====转换粮食类别信息");
 		List<Map<String, Object>> toResult = Lists.newArrayList();
 		for (Map<String, Object> soureRow : sourceGrainCodeResult) {
 			Map<String, Object> toRow = Maps.newHashMap();
@@ -43,14 +43,14 @@ public class GrainCodeServiceImpl extends BaseServiceImpl implements GrainCodeSe
 			toRow.put("BH", soureRow.get("GrainCode"));
 			toRow.put("MC", FormatterUtil.trim(soureRow.get("GrainName")));
 		}
-		logger.info("----结束====转换粮食类别信息");
-		logger.info("----开始====生成粮食类别信息SQL");
+		System.out.println("----结束====转换粮食类别信息");
+		System.out.println("----开始====生成粮食类别信息SQL");
 		List<String> insertSQL = SQLUtil.toInsertSQL(toResult, "dm_crk_lspz");
-		logger.info("----结束====生成粮食类别信息SQL");
-		logger.info("----开始====插入粮食类别信息");
+		System.out.println("----结束====生成粮食类别信息SQL");
+		System.out.println("----开始====插入粮食类别信息");
 		toGtJdbcTemplate.batchUpdate(insertSQL.toArray(new String[insertSQL.size()]));
-		logger.info("----结束====插入粮食类别信息");
-		logger.info("结束进行============粮食类别信息============数据转换,源表条数：" + sourceGrainCodeResult.size()
+		System.out.println("----结束====插入粮食类别信息");
+		System.out.println("结束进行============粮食类别信息============数据转换,源表条数：" + sourceGrainCodeResult.size()
 				+ "    转入目标表dm_crk_lspz条数：" + insertSQL.size());
 
 	}

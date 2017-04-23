@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/defaults.xml" />
+	<include resource="org/springframework/boot/logging/logback/console-appender.xml" />
+	<property name="LOG_PATH" value="log" />
+	<property name="CHARSET" value="UTF-8"/>
+	<springProperty scope="context" name="applicationName" source="spring.application.name" />
+	<springProperty scope="context" name="profiles" source="spring.profiles" />
+	<contextName>${applicationName}</contextName>
+	<springProfile name="!prod,!test,!production">
+		<logger name="org.springframework.jdbc.core.JdbcTemplate" level="INFO"/>
+		<logger name="springfox" level="INFO" />
+		<logger name="org.springframework" level="INFO" />
+		<logger name="org.springframework.statemachine" level="INFO" />
+		<root level="INFO">
+			<appender-ref ref="CONSOLE" />
+		</root>
+	</springProfile>
+</configuration>
